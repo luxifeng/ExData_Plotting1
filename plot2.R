@@ -8,7 +8,6 @@ datetime <- paste(data$Date, data$Time)
 Datetime <- strptime(datetime, "%d/%m/%Y %H:%M:%S")
 data <- cbind(data, Datetime)
 ## Close the current graphical device and open new device
-dev.off(dev.list()["RStudioGD"])
 dev.new(width = 480, height = 480)
 par(mfrow = c(1, 1))
 ## Plot
