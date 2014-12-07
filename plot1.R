@@ -5,7 +5,7 @@ colnames(data) <- c("Date", "Time", "Global_active_power", "Global_reactive_powe
 globalActivePower.raw <- data[, 3]
 ## Clean data
 globalActivePower.tidy <- globalActivePower.raw[!is.na(globalActivePower.raw)]
-## Close the current graphical device and open nre device
+## Close the current graphical device and open new device
 dev.off(dev.list()["RStudioGD"])
 dev.new(width = 480, height = 480)
 par(mfrow = c(1, 1))
